@@ -1,0 +1,32 @@
+@apiurl = http://localhost:8080/exames
+
+###
+GET  {{apiurl}}/todos
+
+###
+GET  {{apiurl}}/um/
+
+###
+POST {{apiurl}}/salvar
+Content-Type: application/json
+
+{
+	"nomeExame":"Audiometria",
+	"dataAgendado":"10/02/2022",	
+    "tipo":{
+        "tipo":"PER"
+    },
+    "resultado":{
+        "aso":"ok",
+        "fco":"ok",
+        "guia":"ok",
+        "tudoOk":"ok"
+    }	
+}
+
+
+###
+DELETE {{apiurl}}
+
+
+

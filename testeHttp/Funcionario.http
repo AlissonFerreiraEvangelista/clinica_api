@@ -1,0 +1,55 @@
+@apiurl = http://localhost:8080/funcionario
+
+###
+GET  {{apiurl}}/todos
+
+###
+GET  {{apiurl}}/um/
+
+###
+POST {{apiurl}}/salvar
+Content-Type: application/json
+
+  {
+    "matricula":"812548",
+    "nome":"Alisson",
+	"cliente":{
+		"cnpj":"10052002",
+		"nomeFantasia":"Total Life",
+		"endereco":"Rua Zero",
+		"telefone":"48844848"	
+	},
+	"exames":{
+		"nomeExame":"Audiometria",
+		"dataAgendado":"10/02/2022"	
+	}
+}
+
+
+###
+DELETE {{apiurl}}/livros/10
+
+###
+POST  {{apiurl}}/salvar
+Content-Type: application/json
+
+{
+    "matricula":"812548",
+    "nome":"Alisson"
+}
+
+###
+POST {{apiurl}}/salvar
+Content-Type: application/json
+
+  {
+    "matricula":"812548",
+    "nome":"Alisson",
+	"cliente":{
+		"cnpj":"10052002",
+		"nomeFantasia":"Total Life",
+		"endereco":"Rua Zero",
+		"telefone":"48844848"	
+	}
+}
+
