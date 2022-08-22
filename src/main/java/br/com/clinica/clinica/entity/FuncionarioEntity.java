@@ -36,10 +36,15 @@ public class FuncionarioEntity {
     @ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
     @JoinColumn(name = "id_cliente")
     ClienteEntity cliente;
-
+    /* 
     @OneToMany(mappedBy = "funcionarios", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
     List<ExamesEntity> exames;
+    */
+
+    @ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
+    @JoinColumn(name = "id_exame")
+    ExamesEntity exame;
 
 
 

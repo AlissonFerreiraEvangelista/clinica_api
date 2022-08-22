@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,14 +41,19 @@ public class ExamesEntity {
     @JoinColumn(name = "id_resuldado")
     private ResultadoExameEntity resultado;
 
+    /*
     @ManyToOne(fetch = FetchType.EAGER,  cascade=CascadeType.ALL)
     @JoinColumn(name = "Id_funcionario")
     FuncionarioEntity funcionarios;
+     */
 
     @ManyToMany(fetch = FetchType.LAZY,cascade = {CascadeType.PERSIST,CascadeType.MERGE},
     mappedBy = "exames")
     @JsonIgnore
     private List<ClienteEntity> clientes;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "exame")
+    @JsonIgnore
+    private List<FuncionarioEntity> funcionario;
     
 }

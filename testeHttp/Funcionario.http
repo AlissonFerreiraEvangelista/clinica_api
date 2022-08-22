@@ -19,7 +19,7 @@ Content-Type: application/json
 		"endereco":"Rua Zero",
 		"telefone":"48844848"	
 	},
-	"exames":{
+	"exame":{
 		"nomeExame":"Audiometria",
 		"dataAgendado":"10/02/2022"	
 	}
@@ -34,8 +34,8 @@ POST  {{apiurl}}/salvar
 Content-Type: application/json
 
 {
-    "matricula":"812548",
-    "nome":"Alisson"
+    "matricula":"0001",
+    "nome":"Aline"
 }
 
 ###
