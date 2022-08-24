@@ -33,7 +33,7 @@ public class ExamesEntity {
 
     String dataAgendado;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER,  cascade=CascadeType.ALL)
     @JoinColumn(name = "id_tipo")
     private TipoExameEntity tipo;
 

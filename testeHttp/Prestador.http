@@ -1,0 +1,30 @@
+@apiurl = http://localhost:8080/prestador
+
+###
+GET  {{apiurl}}/todos
+
+###
+POST {{apiurl}}/salvar
+Content-Type: application/json
+
+  {
+    "nome":"Maxipas",
+	  "razao":"Total Life",
+	  "tipo":"Pessoa Juridica",
+	  "email":"alisson@gmail.com",
+    "obs":"Resultado disponivel no Portal"	
+  }
+
+###
+PUT  {{apiurl}}/atualiza
+Content-Type: application/json
+
+  {
+    "id":2,
+    "nome":"Labori",
+	  "razao":"Total Life",
+	  "tipo":"Pessoa Juridica",
+	  "email":"alisson@gmail.com",
+    "obs":"Resultado disponivel no Portal"	
+  }
+
