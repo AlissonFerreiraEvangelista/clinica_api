@@ -41,12 +41,7 @@ public class ExamesEntity {
     @JoinColumn(name = "id_resuldado")
     private ResultadoExameEntity resultado;
 
-    /*
-    @ManyToOne(fetch = FetchType.EAGER,  cascade=CascadeType.ALL)
-    @JoinColumn(name = "Id_funcionario")
-    FuncionarioEntity funcionarios;
-     */
-
+    
     @ManyToMany(fetch = FetchType.LAZY,cascade = {CascadeType.PERSIST,CascadeType.MERGE},
     mappedBy = "exames")
     @JsonIgnore

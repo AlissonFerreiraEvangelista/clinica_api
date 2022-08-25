@@ -66,17 +66,17 @@ Content-Type: application/json
 		"endereco":"Rua Zero",
 		"telefone":"48844848"	
 	},
-		"prestador":{
-			"nome":"Maxipas",
-			"razao":"Total Life",
-			"tipo":"Pessoa Juridica",
-			"email":"alisson@gmail.com",
-			"obs":"Resultado disponivel no Portal"	
-		},
-		"exame":{
-			"nomeExame":"Audiometria",
-			"dataAgendado":"10/02/2022",	
-			"tipo":{
+	"prestador":{
+		"nome":"Maxipas",
+		"razao":"Total Life",
+		"tipo":"Pessoa Juridica",
+		"email":"alisson@gmail.com",
+		"obs":"Resultado disponivel no Portal"	
+	},
+	"exame":{
+		"nomeExame":"Audiometria",
+		"dataAgendado":"10/02/2022",	
+		"tipo":{
 			"tipo":"PER"
 		},
 		"resultado":{
